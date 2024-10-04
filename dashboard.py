@@ -3,8 +3,8 @@ import streamlit as st
 import plotly.express as px
 
 # Membaca data
-bikes_day_df = pd.read_csv("./data/day.csv")
-bikes_hour_df = pd.read_csv("./data/hour.csv")
+bikes_day_df = pd.read_csv("./dashboard/bikes_day_df.csv")
+bikes_hour_df = pd.read_csv("./dashboard/bikes_hour_df.csv")
 
 # Mengonversi kolom tanggal menjadi datetime
 bikes_day_df["dteday"] = pd.to_datetime(bikes_day_df["dteday"])
